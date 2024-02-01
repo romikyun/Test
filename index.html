@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<title>YouTubeへのリダイレクトボタン</title>
+<style>
+  /* ボタンとコンテナのスタイル */
+  .button-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh; /* 画面の高さに合わせる */
+  }
+
+  .redirect-button {
+    padding: 20px 40px; /* ボタンの大きさ */
+    font-size: 24px; /* フォントサイズ */
+    cursor: pointer; /* カーソルをポインターに */
+  }
+</style>
+</head>
+<body>
+
+<div class="button-container">
+  <button class="redirect-button">YouTubeを開く</button>
+</div>
+
+<script>
+  document.querySelector('.redirect-button').addEventListener('click', function() {
+    window.location.href = 'https://www.youtube.com/'; // YouTubeのURLにリダイレクト
+  });
+</script>
+
+</body>
+</html>
